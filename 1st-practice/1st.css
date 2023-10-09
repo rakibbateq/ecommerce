@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    font-family:sans-serif;
+}
+body{
+    width: 100%;
+}
+button.normal{
+    font-size: 14px;
+    font-weight: 800px;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    border:none;
+    outline: none;
+    transition: 0.2s;
+
+
+
+}
+#Header {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background: #e3e6f6;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    /* font-weight: 900; */
+    z-index: 100;
+    position: sticky;
+    top:0;
+    left: 0;
+    
+}
+.img{
+    width: 100px;
+    height: 100px;
+    border-radius: 60px;
+}
+.navbar{
+    display: flex;
+    /* list-style: none; */
+    align-items: center;
+    /* gap: 10px; */
+    }
+
+.navbar li{
+        list-style: none;
+        padding: 0 20px;
+        position: relative;
+
+    }
+
+    .navbar li a{
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 700;
+        color: black;
+
+
+    }
+
+    .navbar li a:hover{
+        color: #088178;
+        font-size:18px;
+        transition:.5s;
+        /* transform: rotate(30deg); */
+
+        
+    }
+    .navbar li a.active{
+        /* text-decoration: underline; */
+        background-color: rgb(250, 255, 240);
+        padding: 8px;
+        border-radius: 2px;
+
+    }
+
+    .navbar li a.active::before,
+    .navbar li a:hover::before{
+        content: "";
+        width: 30%;
+        height: 2px;
+        background: #088178;
+        position: absolute;
+        bottom: -5px;
+        left: 20px;
+    }
+
+    #hero{
+        background-image: url(https://img.freepik.com/free-photo/portrat-trendy-feminine-girl-posing-with-shopping-bags-from-store-credit-card-paying-contactl_1258-127340.jpg?w=1380&t=st=1696699338~exp=1696699938~hmac=2bb017ef44eccbc1a50f10a683a5c9714ccae6e7dc94600edf1f3caec56f8f35);
+        height: 90vh;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: top 25% right 30%;
+        background-size: cover;
+        padding: 0 80px;
+
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content: center;
+
+    }
+    #hero h4 {
+     padding-bottom: 15px;
+
+    }
+
+    #hero h1{
+        color:  #088178;
+    }
+
+    #hero button {
+        background-image: url(https://img.freepik.com/premium-photo/bright-red-abstract-aquarel-watercolor-background-colorful-red-acrylic-watercolor-brush-strokes_136401-2944.jpg?size=626&ext=jpg);
+        color: black;
+        border: 0;
+        border-radius: 5px;
+        padding: 14px 80px 14px 65px;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 15px;
+
+    }
+    #feature{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    #feature .fe-box{
+        width:180px;
+        text-align: center;
+        padding: 25px 15px;
+        border: 1px solid #cce7cc;
+        box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.05);
+        border-radius: 4px;
+        margin: 15px 0;
+
+    }
+
+    #feature .fe-box:hover{
+        background-color: aqua;
+        box-shadow: 20px 10px 25px rgba(0, 0, 0, 0.336);
+        transition: 1s;
+    }
+
+    #feature .fe-box h4{
+        padding: 9px 8px 6px 8px;
+        line-height:1 ;
+        border-radius: 4px;
+        background-color: rgb(242, 255, 240);
+        color: #088178;
+        display: inline-block;
+
+    }
+    #feature .fe-box img{
+        width: 100%;
+        margin-bottom:10px ;
+    }
+    
+    #feature .fe-box:nth-child(2) h4 {
+
+        background-color: rgb(216, 197, 67);
+
+    }
+    #feature .fe-box:nth-child(3) h4 {
+
+        background-color: rgb(58, 106, 126);
+
+    }
+    #feature .fe-box:nth-child(4) h4 {
+
+        background-color: rgb(229, 85, 45);
+
+    }
+    #feature .fe-box:nth-child(5) h4 {
+
+        background-color: rgba(67, 112, 216, 0.146);
+
+    }
+    #feature .fe-box:nth-child(6) h4 {
+
+        background-color: rgba(168, 44, 25, 0.752);
+
+    }
+    #product{
+        text-align: center;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+    }
+
+    #product1 .pro{
+        width: 23%;
+        min-width: 250px;
+        padding: 10px 12px;
+        border: 2px solid rgb(0, 255, 166);
+        border-radius: 25px;
+        cursor: pointer;
+        box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
+        position: relative;
+
+        }
+
+        #product1 .pro img{
+            width: 100%;
+            height: 70%;
+            border-radius: 20px;
+        }
+
+        #product1 .pro:hover{
+            box-shadow: 20px 10px 20px rgba(0, 0, 0, 0.3);
+            transition: .5s;
+
+        }
+
+        .des{
+            /* text-align: center; */
+        }
+        .des span{
+            color: rgb(38, 33, 33);
+            font-size: 12px;
+        }
+        .des h5{
+            padding-top: 7px;
+            color: #1a1a1a;
+            font-size: 14px;
+        }
+        .des i{
+            color: orange;
+            font-size: 12px;
+        }
+        .des h4{
+            padding-top: 7px;
+            font-size: 15px;
+            font-weight: 700;
+            color: #088178;
+
+        }
+        .cart{
+           color: #088178;
+           font-weight: 500;
+           /* background-color:#5b8edb ; */
+           line-height: 40px;
+           /* padding: 9px; */
+           /* border-radius: 50%; */
+           position: absolute;
+           bottom: 5px;
+           right: 20px;
+          
+        }
+
+        #product1 .pro-container{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        #banner{ 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url(https://img.freepik.com/free-photo/portrait-young-woman-who-is-posing-covered-with-black-paint_155003-3359.jpg?w=900&t=st=1696848400~exp=1696849000~hmac=45f503c71a7bae647c34276e9cd0df4fcc51756e1eed60bd0d2c553a88d3349a);
+            width: 100%;
+            height: 40vh;
+            background-size: cover;
+            background-position: center;
+            /* font-size: x-large; */
+
+
+        }
+
+        #banner h4 {
+            color: #ffffff;
+            font-size: 16px;
+
+
+        }
+        #banner h1{
+            color: #fff;
+            font-size: 30px;
+            padding: 10px 0;
+
+        }
+        #banner button:hover{
+            background-color: #088178;
+            color: #cce7cc;
+        }
